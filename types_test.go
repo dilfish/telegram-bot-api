@@ -282,6 +282,7 @@ func TestFileLink(t *testing.T) {
 // Ensure all configs are sendable
 var (
 	_ Chattable = AnimationConfig{}
+	_ Chattable = AnswerWebAppQueryConfig{}
 	_ Chattable = AudioConfig{}
 	_ Chattable = BanChatMemberConfig{}
 	_ Chattable = BanChatSenderChatConfig{}
@@ -310,7 +311,9 @@ var (
 	_ Chattable = ForwardConfig{}
 	_ Chattable = GameConfig{}
 	_ Chattable = GetChatMemberConfig{}
+	_ Chattable = GetChatMenuButtonConfig{}
 	_ Chattable = GetGameHighScoresConfig{}
+	_ Chattable = GetMyDefaultAdministratorRightsConfig{}
 	_ Chattable = InlineConfig{}
 	_ Chattable = InvoiceConfig{}
 	_ Chattable = KickChatMemberConfig{}
@@ -327,9 +330,11 @@ var (
 	_ Chattable = RevokeChatInviteLinkConfig{}
 	_ Chattable = SendPollConfig{}
 	_ Chattable = SetChatDescriptionConfig{}
+	_ Chattable = SetChatMenuButtonConfig{}
 	_ Chattable = SetChatPhotoConfig{}
 	_ Chattable = SetChatTitleConfig{}
 	_ Chattable = SetGameScoreConfig{}
+	_ Chattable = SetMyDefaultAdministratorRightsConfig{}
 	_ Chattable = ShippingConfig{}
 	_ Chattable = StickerConfig{}
 	_ Chattable = StopMessageLiveLocationConfig{}
